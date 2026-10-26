@@ -5,16 +5,6 @@ library(ggpubr)
 library(ggplot2)
 
 
-#\\nsdata2/MG
-#setwd("T:/Branch folders/A&R/HALE/Vaccination/Effectiveness")
-
-user ="Charlotte"
-if (user== "Charlotte"){
-setwd("C:/Users/bermic/Office for National Statistics/COVID-19 - Deaths_and_vaccination/RDD VE/plotting scripts updated")
-}
-if (user== "Vahé"){
-  setwd("C:/Users/nafilv/Office for National Statistics(1)/COVID-19 - Deaths_and_vaccination/RDD VE/plotting scripts updated")
-}
 
 
 
