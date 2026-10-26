@@ -56,7 +56,7 @@ sc <- spark_connect(master = "yarn-client",
 
 
 # location to store the results
-dir ="cen_dth_gps/Vaccination analysis/Vaccine effectiveness/RDD"
+dir =""
 out_dir= paste0(dir, "/Results")
 out_dir_paper_results= paste0(dir, "/Results/paper_update_results")
 
@@ -73,7 +73,7 @@ for(i in 1:length(fun_list)) {source(fun_list[i])}
 day_zero <- "2020-12-08"
 
 # Define spark dataframe
-df <- sdf_sql(sc, "SELECT * FROM cen_dth_gps.analytical_linked_vaccination_dataset_20210524_fixed") 
+df <- sdf_sql(sc, "SELECT * FROM <databases>.<datatable>") 
 
 # determine end of study date (last dod minus 7 days)
 
